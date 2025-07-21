@@ -1,0 +1,93 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /*
+    background-image: url('background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    */
+}
+
+h1 {
+    color: rgb(242, 236, 226);
+    font-size: 35px;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(8, 65px);
+    grid-template-rows: repeat(8, 65px);
+    gap: 0px;
+}
+
+.square {
+    width: 65px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.square.brown {
+    background-color: rgb(92, 64, 51);
+}
+
+.square.khaki {
+    background-color: rgb(230, 200, 154);
+}
+
+.piece {
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.piece.white {
+    background-color: rgb(249, 52, 49);
+}
+
+.piece.black {
+    background-color: black;
+}
+
+.piece.selected {
+    border: 2px solid yellow;
+}
+
+.whiteCrown {
+    border-radius: 50%;
+    border: 3px solid rgb(249, 52, 49);
+    height: 52px;
+    width: 52px;
+    z-index: 2;
+    /*
+    background-image: url('red2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    */
+}
+
+.blackCrown {
+    border-radius: 50%;
+    border: 3px solid black;
+    height: 52px;
+    width: 52px;
+    z-index: 2;
+    /*
+    background-image: url('black.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    */
+}
+
+#turn {
+    color: black;
+}
